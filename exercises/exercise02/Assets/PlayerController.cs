@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
 
     float rotateSpeed = .2f;
 
-    float lastRotateDirectionTime =0;
+    float lastRotateDirectionTime = .001f;
     public Rigidbody rb; 
 
     // Start is called before the first frame update
@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Time.time- lastRotateDirectionTime > 1f)
+        if (Time.time - lastRotateDirectionTime > 1f)
         {
             rotateSpeed = rotateSpeed * -1;
             lastRotateDirectionTime = Time.time;
@@ -43,6 +43,7 @@ public class PlayerController : MonoBehaviour
         if (col.gameObject.name == "Cube")
         {
             col.gameObject.GetComponent<Renderer>().material.color = Color.red;
+
 
            
         }
