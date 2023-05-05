@@ -1,12 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class playerController : MonoBehaviour
 {
     Rigidbody2D rb;
     BoxCollider2D box;
     public LayerMask mask;
+
+
+    //  CoinManager cm;
+    //CoinScript cs;
+
+   public int coinCount;
+   public TMP_Text coinText;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +38,8 @@ public class playerController : MonoBehaviour
 
         }
 
+       
+
         float hAxis = Input.GetAxis("Horizontal");
 
         rb.velocity = new Vector2(10 * hAxis, rb.velocity.y);
@@ -42,6 +53,18 @@ public class playerController : MonoBehaviour
         return hit.collider != null;
     }
 
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("coin"))
+        {
+            //cs.coinCount++;
+            coinCount++;
+            coinText.text = coinCount.ToString();
+            Destroy(other.gameObject);
+           
+        }
+    }
+    
 
 
 }
