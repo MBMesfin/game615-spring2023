@@ -4,11 +4,13 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+
 public class playerController : MonoBehaviour
 {
     Rigidbody2D rb;
     BoxCollider2D box;
     public LayerMask mask;
+
 
 
     //  CoinManager cm;
@@ -21,6 +23,7 @@ public class playerController : MonoBehaviour
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
         box = gameObject.GetComponent<BoxCollider2D>();
+      
         
     }
 
@@ -29,7 +32,7 @@ public class playerController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.W) && OnGround())
         {
-            rb.AddForce(Vector2.up * 500); 
+            rb.AddForce(Vector2.up * 300); 
         }
 
         if (Input.GetKeyDown(KeyCode.W) && rb.velocity.y > 0)   
@@ -37,12 +40,21 @@ public class playerController : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, 0);
 
         }
+        //if (Input.GetKeyDown(KeyCode.D) && rb.velocity.x > 0)
+        //{
+        //    rb.velocity = new Vector2(rb.velocity.x, 0);
 
-       
+
+        //}
+
+
 
         float hAxis = Input.GetAxis("Horizontal");
+       // float vAxis = Input.GetAxis("Vertical");
 
         rb.velocity = new Vector2(10 * hAxis, rb.velocity.y);
+       // rb.velocity = new Vector2(10 * vAxis, rb.velocity.x);
+
     }
     bool OnGround()
     {
@@ -59,11 +71,13 @@ public class playerController : MonoBehaviour
         {
             //cs.coinCount++;
             coinCount++;
-            coinText.text = coinCount.ToString();
+            coinText.text = "Coin Counter: " + coinCount.ToString();
             Destroy(other.gameObject);
            
         }
     }
+
+ 
     
 
 
