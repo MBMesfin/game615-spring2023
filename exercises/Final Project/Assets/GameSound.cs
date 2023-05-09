@@ -6,6 +6,7 @@ public class GameSound : MonoBehaviour
 {
     public AudioSource Sounds;
     public AudioClip gameS;
+
     // Start is called before the first frame update
     void Start()
     {
