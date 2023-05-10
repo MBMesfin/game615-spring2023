@@ -53,6 +53,8 @@ Partners: Mikki | Radha
 
 Link to code
 https://github.com/MBMesfin/game615-spring2023-04
+
+
 [Play](https://mbmesfin.github.io/game615-spring2023-04/exercise04/play/)
 
 Display a timer on the screen. If the player fails to collect all the collectable items before it reaches zero, destroy the player and display a "You Lose" message of some sort.
@@ -77,8 +79,10 @@ Sources: Airplane by Poly by Google [CC-BY] via Poly Pizza Kitten by Poly by Goo
 
 Collect coins Inside a Building!
 
-https://lindenkillam.github.io/game615-spring2023/exercises/exercise05/play/
- 
+Play: https://lindenkillam.github.io/game615-spring2023/exercises/exercise05/play/
+
+Link to code: https://github.com/lindenkillam/game615-spring2023-05
+
 Coin by Poly by Google [CC-BY] via Poly Pizza
 
 -------------------------------
