@@ -125,4 +125,6 @@ Bugs: I tried to add the enemy but that did not work
 
 Link to code: https://github.com/MBMesfin/game615-spring2023/tree/main/exercises/Final%20Project
 
+Screen Recording is in the "Screen Recording Folder. 
+
 
