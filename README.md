@@ -9,5 +9,4 @@ Bugs
 
 ** There is a build project error
 
-Link to code: https://github.com/MBMesfin/game615-spring2023/FinalProject
 
