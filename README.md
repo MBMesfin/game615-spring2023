@@ -1,7 +1,8 @@
 
 # Final Project - Pengiun Rush
 
-Race against the clock to collect coins in a 2d environment
+Race against the clock to collect coins
+
 Bugs
 
 - player movement
