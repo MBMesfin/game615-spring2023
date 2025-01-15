@@ -1,5 +1,5 @@
 
-# Final Project - Pengiun Rush
+# Final Project - Penguin Rush
 
 Race against the clock to collect coins
 
