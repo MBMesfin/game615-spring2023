@@ -11,5 +11,6 @@ Bugs
 ** There is a build project error
 
 Code is found in Final Project/Assets/playerController.cs
+Final Project/Assets/playerController.cs
 
 
